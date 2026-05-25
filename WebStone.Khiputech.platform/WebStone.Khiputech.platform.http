@@ -1,0 +1,6 @@
+@WebStone.Khiputech.platform_HostAddress = http://localhost:5046
+
+GET {{WebStone.Khiputech.platform_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
