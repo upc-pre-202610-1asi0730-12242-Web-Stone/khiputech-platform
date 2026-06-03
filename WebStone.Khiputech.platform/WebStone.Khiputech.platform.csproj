@@ -35,4 +35,8 @@
       <Folder Include="Visiting\Interfaces\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="Properties\launchSettings.json" />
+    </ItemGroup>
+
 </Project>
