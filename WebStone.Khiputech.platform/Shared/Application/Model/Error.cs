@@ -1,6 +1,3 @@
-namespace WebStone.Khiputech.platform.Shared.Application.Model;
+namespace WebStone.Khiputech.Platform.Shared.Application.Model;
 
-public class Error
-{
-    
-}
+public record Error(string Code, string Message);

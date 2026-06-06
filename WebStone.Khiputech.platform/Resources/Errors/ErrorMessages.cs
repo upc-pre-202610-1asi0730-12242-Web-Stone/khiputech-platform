@@ -1,6 +1,5 @@
-namespace WebStone.Khiputech.platform.Resources.Errors;
+namespace WebStone.Khiputech.Platform.Resources.Errors;
 
 public class ErrorMessages
 {
-    
 }

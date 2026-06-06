@@ -1,41 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-    <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
-        <Nullable>enable</Nullable>
-        <ImplicitUsings>enable</ImplicitUsings>
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5"/>
-    </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.2" />
 
-    <ItemGroup>
-      <Folder Include="Analytics\Application\Patterns\" />
-      <Folder Include="Analytics\Domain\" />
-      <Folder Include="Analytics\Infrastructure\" />
-      <Folder Include="Analytics\Interfaces\" />
-      <Folder Include="Maintenance\Application\Patterns\" />
-      <Folder Include="Maintenance\Domain\Model\" />
-      <Folder Include="Maintenance\Domain\Repositories\" />
-      <Folder Include="Maintenance\Infrastructure\" />
-      <Folder Include="Maintenance\Interfaces\" />
-      <Folder Include="Operation\Application\Patterns\" />
-      <Folder Include="Operation\Domain\" />
-      <Folder Include="Operation\Infrastructure\" />
-      <Folder Include="Operation\Interfaces\" />
-      <Folder Include="Shared\Application\Patterns\" />
-      <Folder Include="Shared\Domain\Repositories\" />
-      <Folder Include="Shared\Infrastructure\" />
-      <Folder Include="Shared\Interfaces\" />
-      <Folder Include="Visiting\Application\Patterns\" />
-      <Folder Include="Visiting\Domain\" />
-      <Folder Include="Visiting\Infrastructure\" />
-      <Folder Include="Visiting\Interfaces\" />
-    </ItemGroup>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
 
-    <ItemGroup>
-      <Content Include="Properties\launchSettings.json" />
-    </ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="7.2.0" />
+
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.19.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.19.1" />
+  </ItemGroup>
 
 </Project>

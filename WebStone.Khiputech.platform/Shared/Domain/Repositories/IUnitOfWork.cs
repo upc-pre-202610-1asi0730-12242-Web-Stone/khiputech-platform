@@ -1,6 +1,6 @@
-namespace WebStone.Khiputech.platform.Shared.Domain.Repositories;
+namespace WebStone.Khiputech.Platform.Shared.Domain.Repositories;
 
-public class IUnitOfWork
+public interface IUnitOfWork
 {
-    
+    Task<int> CompleteAsync(CancellationToken cancellationToken = default);
 }

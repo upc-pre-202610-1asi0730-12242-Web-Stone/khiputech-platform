@@ -1,6 +1,7 @@
-namespace WebStone.Khiputech.platform.Shared.Domain.Model.Entities;
+namespace WebStone.Khiputech.Platform.Shared.Domain.Model.Entities;
 
-public class IAuditableEntity
+public interface IAuditableEntity
 {
-    
+    DateTimeOffset? CreatedAt { get; set; }
+    DateTimeOffset? UpdatedAt { get; set; }
 }
