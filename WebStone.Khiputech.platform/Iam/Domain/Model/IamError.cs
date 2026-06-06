@@ -1,6 +1,13 @@
-namespace WebStone.Khiputech.platform.Iam.Domain.Model;
+namespace WebStone.Khiputech.Platform.Iam.Domain.Model;
 
-public class IamError
+public enum IamError
 {
-    
+    None,
+    UserNotFound,
+    UsernameAlreadyTaken,
+    InvalidCredentials,
+    OperationCancelled,
+    DatabaseError,
+    InternalServerError,
+    ExternalServiceError
 }

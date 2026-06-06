@@ -1,6 +1,3 @@
-namespace WebStone.Khiputech.platform.Iam.Domain.Model.Queries;
+namespace WebStone.Khiputech.Platform.Iam.Domain.Model.Queries;
 
-public class GetUserByIdQuery
-{
-    
-}
+public record GetUserByIdQuery(int Id);

@@ -28,6 +28,7 @@ public class AuthenticationController(
     private readonly IStringLocalizer<IamMessages> _iamLocalizer = iamLocalizer;
     private readonly ProblemDetailsFactory _problemDetailsFactory = problemDetailsFactory;
 
+
     [HttpPost("sign-in")]
     [AllowAnonymous]
     [SwaggerOperation(
@@ -53,6 +54,7 @@ public class AuthenticationController(
                 userAndToken.token))
         );
     }
+
 
     [HttpPost("sign-up")]
     [AllowAnonymous]

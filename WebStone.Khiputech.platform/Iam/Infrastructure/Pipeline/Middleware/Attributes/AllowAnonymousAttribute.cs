@@ -1,6 +1,7 @@
-namespace WebStone.Khiputech.platform.Iam.Infrastructure.Pipeline.Middleware.Attributes;
+namespace WebStone.Khiputech.Platform.Iam.Infrastructure.Pipeline.Middleware.Attributes;
 
-public class AllowAnonymousAttribute
+
+[AttributeUsage(AttributeTargets.Method | AttributeTargets.Class)]
+public class AllowAnonymousAttribute : Attribute
 {
-    
 }

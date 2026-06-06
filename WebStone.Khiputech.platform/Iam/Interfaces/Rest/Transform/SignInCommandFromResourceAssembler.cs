@@ -6,7 +6,6 @@ namespace WebStone.Khiputech.Platform.Iam.Interfaces.Rest.Transform;
 
 public static class SignInCommandFromResourceAssembler
 {
-
     public static SignInCommand ToCommandFromResource(SignInResource resource)
     {
         if (resource == null)

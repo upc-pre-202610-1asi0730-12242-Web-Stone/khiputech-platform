@@ -1,6 +1,8 @@
-namespace WebStone.Khiputech.platform.Iam.Infrastructure.Tokens.Jwt.Configuration;
+namespace WebStone.Khiputech.Platform.Iam.Infrastructure.Tokens.Jwt.Configuration;
+
 
 public class TokenSettings
 {
-    
+
+    public required string Secret { get; set; }
 }

@@ -1,6 +1,5 @@
-namespace WebStone.Khiputech.platform.Iam.Resources;
+namespace WebStone.Khiputech.Platform.Iam.Resources;
 
 public class IamMessages
 {
-    
 }

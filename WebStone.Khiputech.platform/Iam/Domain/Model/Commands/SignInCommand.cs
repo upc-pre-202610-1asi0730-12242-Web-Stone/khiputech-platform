@@ -1,6 +1,3 @@
-namespace WebStone.Khiputech.platform.Iam.Domain.Model.Commands;
+namespace WebStone.Khiputech.Platform.Iam.Domain.Model.Commands;
 
-public class SignInCommand
-{
-    
-}
+public record SignInCommand(string Username, string Password);

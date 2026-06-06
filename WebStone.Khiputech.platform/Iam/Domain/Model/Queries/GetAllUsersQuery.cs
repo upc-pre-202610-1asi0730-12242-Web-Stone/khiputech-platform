@@ -1,6 +1,3 @@
 namespace WebStone.Khiputech.Platform.Iam.Domain.Model.Queries;
 
-public class GetAllUsersQuery
-{
-    
-}
+public record GetAllUsersQuery;

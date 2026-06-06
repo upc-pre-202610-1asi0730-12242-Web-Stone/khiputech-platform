@@ -1,6 +1,12 @@
-namespace WebStone.Khiputech.platform.Iam.Application.Internal.OutboundServices;
+using WebStone.Khiputech.Platform.Iam.Domain.Model.Aggregates;
 
-public class ITokenService
+namespace WebStone.Khiputech.Platform.Iam.Application.Internal.OutboundServices;
+
+public interface ITokenService
 {
-    
+
+    string GenerateToken(User user);
+
+
+    Task<int?> ValidateToken(string token);
 }

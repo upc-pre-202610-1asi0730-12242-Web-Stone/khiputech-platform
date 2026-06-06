@@ -1,6 +1,9 @@
-namespace WebStone.Khiputech.platform.Iam.Infrastructure.Pipeline.Middleware.Extensions;
+using WebStone.Khiputech.Platform.Iam.Infrastructure.Pipeline.Middleware.Components;
 
-public class RequestAuthorizationMiddlewareExtensions
+namespace WebStone.Khiputech.Platform.Iam.Infrastructure.Pipeline.Middleware.Extensions;
+
+public static class RequestAuthorizationMiddlewareExtensions
 {
-    
+    public static IApplicationBuilder UseRequestAuthorization(this IApplicationBuilder builder)
+        => builder.UseMiddleware<RequestAuthorizationMiddleware>();
 }
