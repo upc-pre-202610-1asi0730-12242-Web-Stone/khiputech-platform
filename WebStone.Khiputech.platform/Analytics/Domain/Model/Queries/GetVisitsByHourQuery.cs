@@ -1,6 +1,3 @@
 namespace WebStone.Khiputech.Platform.Analytics.Domain.Model.Queries;
 
-public class GetVisitsByHourQuery
-{
-    
-}
+public record GetVisitsByHourQuery(DateOnly? Date = null);

@@ -1,6 +1,3 @@
-namespace WebStone.Khiputech.platform.Analytics.Domain.Model.Queries;
+namespace WebStone.Khiputech.Platform.Analytics.Domain.Model.Queries;
 
-public class GetStatsQuery
-{
-    
-}
+public record GetStatsQuery(DateOnly? Date = null);

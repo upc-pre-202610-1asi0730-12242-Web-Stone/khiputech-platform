@@ -1,4 +1,4 @@
-namespace WebStone.Khiputech.platform.Analytics.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
+namespace WebStone.Khiputech.Platform.Analytics.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 
 public class Repo
 {

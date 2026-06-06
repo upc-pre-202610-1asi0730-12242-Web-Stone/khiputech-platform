@@ -1,6 +1,3 @@
 namespace WebStone.Khiputech.Platform.Analytics.Domain.Model.Queries;
 
-public class GetTopArtworksQuery
-{
-    
-}
+public record GetTopArtworksQuery(int Limit = 5);
