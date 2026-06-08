@@ -15,15 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a13dadee-8688-4acf-a14b-2ac00528ff35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Application/Internal/QueryServices/ArtworkQueryService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Application/QueryServices/IArtworkQueryService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Domain/Model/Queries/GetArtworkByIdQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Domain/Repositories/IArtworkRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.khiputech-platform/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.khiputech-platform/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.khiputech-platform/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.khiputech-platform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.khiputech-platform/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Domain/ELIMINAR.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Domain/Model/Aggregates/Artwork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Interfaces/ELIMINAR.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/WebStone.Khiputech.platform.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/WebStone.Khiputech.platform.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,61 +161,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0880876651311041E-281" />
-      <entry key="MS500" value="6.717416787910497E-57" />
-      <entry key="S2" value="1.7236200903347904E-14" />
-      <entry key="S5" value="6.851530719519608E-6" />
-      <entry key="S10" value="0.005240179322019725" />
-      <entry key="S30" value="0.5118812328214966" />
-      <entry key="S60" value="1.9394667383014383" />
-      <entry key="M2" value="4.272075153567479" />
-      <entry key="M5" value="8.000561757538794" />
-      <entry key="M10" value="12.28921405951378" />
-      <entry key="M15" value="18.625963608893947" />
-      <entry key="M30" value="43.45932350174181" />
-      <entry key="H1" value="89.49684669796056" />
-      <entry key="H2" value="156.23934174262553" />
-      <entry key="H4" value="237.3648273205011" />
-      <entry key="D1" value="398.6518730879963" />
-      <entry key="W1" value="446.1810847952509" />
+      <entry key="MS100" value="1.4402213298851656" />
+      <entry key="MS500" value="4.149009954446467" />
+      <entry key="S2" value="7.140187823344398" />
+      <entry key="S5" value="8.176931114312854" />
+      <entry key="S10" value="8.5739379671163" />
+      <entry key="S30" value="9.210840985478706" />
+      <entry key="S60" value="12.049230494133747" />
+      <entry key="M2" value="19.189869748433438" />
+      <entry key="M5" value="35.95498884073346" />
+      <entry key="M10" value="52.914506041654924" />
+      <entry key="M15" value="64.78206262616841" />
+      <entry key="M30" value="95.09506889526013" />
+      <entry key="H1" value="144.86783921055041" />
+      <entry key="H2" value="215.43186295268262" />
+      <entry key="H4" value="300.4372294049395" />
+      <entry key="D1" value="468.99616872877516" />
+      <entry key="W1" value="518.7595083483088" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.000000000000034" />
-      <entry key="S10" value="1.0000001842540926" />
-      <entry key="S30" value="1.0056903508912707" />
-      <entry key="S60" value="1.0754344145020738" />
-      <entry key="M2" value="1.2746532754488396" />
-      <entry key="M5" value="1.5991402567141566" />
-      <entry key="M10" value="1.9460610211545482" />
-      <entry key="M15" value="2.5473305401272253" />
-      <entry key="M30" value="4.929519643742156" />
-      <entry key="H1" value="8.719537158804307" />
-      <entry key="H2" value="13.610811907677832" />
-      <entry key="H4" value="20.010803668092567" />
-      <entry key="D1" value="34.5654136678197" />
-      <entry key="W1" value="39.141247860264436" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.1398174755213268E-114" />
+      <entry key="S5" value="2.646879220439418E-46" />
+      <entry key="S10" value="1.6269235371817796E-23" />
+      <entry key="S30" value="2.5483161351471017E-8" />
+      <entry key="S60" value="1.7119001910666655E-4" />
+      <entry key="M2" value="0.016081972735309417" />
+      <entry key="M5" value="0.27814128606641386" />
+      <entry key="M10" value="0.8116072259681847" />
+      <entry key="M15" value="1.4219301724865925" />
+      <entry key="M30" value="3.6829946268645095" />
+      <entry key="H1" value="7.53688128437854" />
+      <entry key="H2" value="12.654155101521308" />
+      <entry key="H4" value="19.29474713966646" />
+      <entry key="D1" value="34.35612589376016" />
+      <entry key="W1" value="39.10730343481064" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.3253354638604834" />
-      <entry key="MS500" value="0.7988519164491479" />
-      <entry key="S2" value="0.9454021167507609" />
-      <entry key="S5" value="0.9777991779374432" />
-      <entry key="S10" value="0.9940711079973386" />
-      <entry key="S30" value="1.5134586244219843" />
-      <entry key="S60" value="3.0109964331694834" />
-      <entry key="M2" value="5.542199112447754" />
-      <entry key="M5" value="9.596161956370217" />
-      <entry key="M10" value="14.232445922012483" />
-      <entry key="M15" value="21.170152191647198" />
-      <entry key="M30" value="48.384928813979826" />
-      <entry key="H1" value="98.21267625998456" />
-      <entry key="H2" value="169.8471534381176" />
-      <entry key="H4" value="257.3733400914616" />
-      <entry key="D1" value="433.2165933164741" />
-      <entry key="W1" value="485.3222194049626" />
+      <entry key="MS100" value="1.3828033461259333" />
+      <entry key="MS500" value="4.086684260154215" />
+      <entry key="S2" value="7.108630360290235" />
+      <entry key="S5" value="8.162137806016073" />
+      <entry key="S10" value="8.566129448439415" />
+      <entry key="S30" value="9.208070156374475" />
+      <entry key="S60" value="12.047742900488633" />
+      <entry key="M2" value="19.20474648972482" />
+      <entry key="M5" value="36.23179382431045" />
+      <entry key="M10" value="53.724464720379586" />
+      <entry key="M15" value="66.20189083029175" />
+      <entry key="M30" value="98.77494274584453" />
+      <entry key="H1" value="152.40141107716872" />
+      <entry key="H2" value="228.08317458212414" />
+      <entry key="H4" value="319.7297400897461" />
+      <entry key="D1" value="503.35160072625115" />
+      <entry key="W1" value="557.8666979640403" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -236,32 +230,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.WebStone.Khiputech.platform: http.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feature/get-artifact-by-id",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.WebStone.Khiputech.platform: http.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/get-artifact-by-id&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebStone.Khiputech.platform: http">
     <configuration name="WebStone.Khiputech.platform: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebStone.Khiputech.platform/WebStone.Khiputech.platform.csproj" />
@@ -317,6 +311,15 @@
       <workItem from="1780801328003" duration="6338000" />
       <workItem from="1780932777477" duration="5062000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(visiting): implement get-artifact-by-id endpoint">
+      <option name="closed" value="true" />
+      <created>1781543773112</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1781543773112</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +340,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="feat(visiting): implement get-artifact-by-id endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(visiting): implement get-artifact-by-id endpoint" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -361,6 +366,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
