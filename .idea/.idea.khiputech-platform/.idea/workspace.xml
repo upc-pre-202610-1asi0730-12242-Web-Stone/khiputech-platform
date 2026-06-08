@@ -15,72 +15,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a13dadee-8688-4acf-a14b-2ac00528ff35" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Application/Internal/QueryServices/ArtworkQueryService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Application/QueryServices/IArtworkQueryService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Domain/Model/Queries/GetArtworkByIdQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Domain/Repositories/IArtworkRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.khiputech-platform/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.khiputech-platform/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.khiputech-platform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.khiputech-platform/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Application/CommandServices/ICapacityCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Application/CommandServices/ICapacityCommandService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Application/Internal/CapacityCommandService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Application/Internal/CapacityQueryService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Application/Internal/CommandServices/CapacityCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Application/Internal/CommandServices/CapacityCommandService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Application/QueryServices/ICapacityQueryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Application/QueryServices/ICapacityQueryService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Model/Aggregates/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Model/Aggregates/Room.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Model/Aggregates/Sensor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Model/Aggregates/Sensor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Model/Commands/UpdateRoomOccupancyCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Model/Commands/UpdateRoomOccupancyCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Model/Queries/GetRoomsQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Model/Queries/GetRoomsQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Model/Queries/GetSensorsQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Model/Queries/GetSensorsQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Repositories.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Repositories/IRoomRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Repositories/IRoomRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Repositories/ISensorRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Domain/Repositories/ISensorRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Infrastructure/Persistence/EntityFrameworkCore/Configuration/Extensions/ModelBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Infrastructure/Persistence/EntityFrameworkCore/Configuration/Extensions/ModelBuilderExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Infrastructure/Persistence/EntityFrameworkCore/Repositories/RoomRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Infrastructure/Persistence/EntityFrameworkCore/Repositories/RoomRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Infrastructure/Persistence/EntityFrameworkCore/Repositories/SensorRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Infrastructure/Persistence/EntityFrameworkCore/Repositories/SensorRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Infrastructure/Persistence/RoomRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Infrastructure/Persistence/SensorRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Interfaces/Rest/CapacityController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Interfaces/Rest/CapacityController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Interfaces/Rest/Resources/RoomResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Interfaces/Rest/Resources/RoomResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Interfaces/Rest/Resources/SensorResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Interfaces/Rest/Resources/SensorResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Interfaces/Rest/Transform/RoomResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Interfaces/Rest/Transform/RoomResourceFromEntityAssembler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Interfaces/Rest/Transform/SensorResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Capacity/Interfaces/Rest/Transform/SensorResourceFromEntityAssembler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Iam/Infrastructure/Pipeline/Middleware/Components/RequestAuthorizationMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Iam/Infrastructure/Pipeline/Middleware/Components/RequestAuthorizationMiddleware.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/CommandServices/IMaintenanceCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/CommandServices/IMaintenanceCommandService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/Domain/Model/Aggregates/IMaintenanceTaskRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/Domain/Model/Aggregates/MaintenanceTask.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/Domain/Model/Commands/RestoreArtworkAvailabilityCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/Domain/Model/Commands/ScheduleMaintenanceCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/Domain/Model/Queries/GetBlockedArtworksQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/Domain/Model/Queries/GetMaintenanceTasksQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/Domain/Model/Repositories/IMaintenanceTaskRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/Internal/CommandServices/MaintenanceCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/Internal/CommandServices/MaintenanceCommandService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/Internal/QueryServices/MaintenanceQueryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/Internal/QueryServices/MaintenanceQueryService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/QueryServices/IMaintenanceQueryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Application/QueryServices/IMaintenanceQueryService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Infrastructure/Persistence/EntityFrameworkCore/Configuration/Extensions/ModelBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Infrastructure/Persistence/EntityFrameworkCore/Configuration/Extensions/ModelBuilderExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Infrastructure/Persistence/EntityFrameworkCore/Repositories/MaintenanceTaskRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Infrastructure/Persistence/EntityFrameworkCore/Repositories/MaintenanceTaskRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Interfaces/Rest/MaintenanceController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Interfaces/Rest/MaintenanceController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Interfaces/Rest/Resources/MaintenanceTaskResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Interfaces/Rest/Resources/MaintenanceTaskResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Interfaces/Rest/Transform/MaintenanceTaskResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Maintenance/Interfaces/Rest/Transform/MaintenanceTaskResourceFromEntityAssembler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Application/CommandServices/IOperationCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Application/CommandServices/IOperationCommandService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Application/Internal/CommandServices/OperationCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Application/Internal/CommandServices/OperationCommandService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Application/Internal/QueryServices/OperationQueryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Application/Internal/QueryServices/OperationQueryService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Application/QueryServices/IOperationQueryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Application/QueryServices/IOperationQueryService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Aggregates/Alert.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Aggregates/Alert.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Aggregates/AlertConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Aggregates/AlertConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Commands/CreateAlertCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Commands/CreateAlertCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Commands/ResolveAlertCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Commands/ResolveAlertCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Commands/UpdateAlertConfigurationCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Commands/UpdateAlertConfigurationCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Queries/GetActiveAlertsQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Queries/GetActiveAlertsQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Queries/GetAlertConfigurationQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Model/Queries/GetAlertConfigurationQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Repositories/IAlertConfigurationRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Repositories/IAlertConfigurationRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Repositories/IAlertRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Domain/Repositories/IAlertRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Infrastructure/Persistence/EntityFrameworkCore/Configuration/Extensions/ModelBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Infrastructure/Persistence/EntityFrameworkCore/Configuration/Extensions/ModelBuilderExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Infrastructure/Persistence/EntityFrameworkCore/Repositories/AlertConfigurationRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Infrastructure/Persistence/EntityFrameworkCore/Repositories/AlertConfigurationRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Infrastructure/Persistence/EntityFrameworkCore/Repositories/AlertRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Infrastructure/Persistence/EntityFrameworkCore/Repositories/AlertRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Interfaces/Interfaces/Rest/OperationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Interfaces/Interfaces/Rest/OperationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Interfaces/Interfaces/Rest/Resources/AlertConfigurationResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Interfaces/Interfaces/Rest/Resources/AlertConfigurationResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Interfaces/Interfaces/Rest/Resources/AlertResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Interfaces/Interfaces/Rest/Resources/AlertResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Interfaces/Interfaces/Rest/Transform/AlertConfigurationResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Interfaces/Interfaces/Rest/Transform/AlertConfigurationResourceFromEntityAssembler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Interfaces/Interfaces/Rest/Transform/AlertResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Operation/Interfaces/Interfaces/Rest/Transform/AlertResourceFromEntityAssembler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Shared/Resources/Errors/CommonMenssages.resx" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Shared/Resources/Errors/CommonMenssages.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Shared/Resources/Errors/ErrorMessages.es.resx" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Shared/Resources/Errors/ErrorMessages.es.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Shared/Resources/Errors/ErrorMessages.resx" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Shared/Resources/Errors/ErrorMessages.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Domain/ELIMINAR.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Domain/Model/Aggregates/Artwork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Interfaces/ELIMINAR.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebStone.Khiputech.platform/WebStone.Khiputech.platform.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebStone.Khiputech.platform/WebStone.Khiputech.platform.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,17 +32,30 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
+      <entry key="_/Users/alumnos/RiderProjects/KhipuTech-BackEnd" value="3ErNYQ5FANcS5VVLTGBsTBaVzNu" />
       <entry key="_D:/UPC/2026-01/Aplicaciones Web - Presencial/GITHUB-BACKEND" value="3EfPFNlavl8twnugdzuXg3Z5Aad" />
     </persistenceIdMap>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;perghormaru-pixel&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/upc-pre-202610-1asi0730-12242-Web-Stone/KhipuTech-BackEnd.git&quot;,
+    &quot;accountId&quot;: &quot;d25a379a-efc1-4a4e-bfd4-4d1dd1b9ba19&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/WebStone.Khiputech.Platform/Analytics/Application/Internal/QueryServices/AnalyticsQueryService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebStone.Khiputech.Platform/Analytics/Application/QueryServices/IAnalyticsQueryService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -198,6 +154,9 @@
     <setting file="file://$PROJECT_DIR$/WebStone.Khiputech.platform/Shared/Infrastructure/Persistence/EntityFrameworkCore/Repositories/UnitOfWork.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebStone.Khiputech.platform/Shared/Infrastructure/Pipeline/Middleware/Extensions/SlugifyParameterTransformer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebStone.Khiputech.platform/Shared/Interfaces/Rest/ProblemDetails/ProblemDetailsFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Application/Internal/QueryServices/ArtworkQueryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Application/QueryServices/IArtworkQueryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebStone.Khiputech.platform/Visiting/Domain/Repositories/IArtworkRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebStone.Khiputech.platform/package-lock.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -208,61 +167,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.5774763454231886" />
-      <entry key="MS500" value="4.309662016511048" />
-      <entry key="S2" value="7.214649716842698" />
-      <entry key="S5" value="8.770001171875327" />
-      <entry key="S10" value="11.104461551142302" />
-      <entry key="S30" value="19.430960794573675" />
-      <entry key="S60" value="29.704007269837554" />
-      <entry key="M2" value="43.60793601318126" />
-      <entry key="M5" value="61.290888523198134" />
-      <entry key="M10" value="71.21295461514487" />
-      <entry key="M15" value="77.34904283501224" />
-      <entry key="M30" value="94.8044455198524" />
-      <entry key="H1" value="127.71122965811644" />
-      <entry key="H2" value="178.9747482474541" />
-      <entry key="H4" value="244.44322407417272" />
-      <entry key="D1" value="376.36653875160204" />
-      <entry key="W1" value="414.8804358830479" />
+      <entry key="MS100" value="1.0880876651311041E-281" />
+      <entry key="MS500" value="6.717416787910497E-57" />
+      <entry key="S2" value="1.7236200903347904E-14" />
+      <entry key="S5" value="6.851530719519608E-6" />
+      <entry key="S10" value="0.005240179322019725" />
+      <entry key="S30" value="0.5118812328214966" />
+      <entry key="S60" value="1.9394667383014383" />
+      <entry key="M2" value="4.272075153567479" />
+      <entry key="M5" value="8.000561757538794" />
+      <entry key="M10" value="12.28921405951378" />
+      <entry key="M15" value="18.625963608893947" />
+      <entry key="M30" value="43.45932350174181" />
+      <entry key="H1" value="89.49684669796056" />
+      <entry key="H2" value="156.23934174262553" />
+      <entry key="H4" value="237.3648273205011" />
+      <entry key="D1" value="398.6518730879963" />
+      <entry key="W1" value="446.1810847952509" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.1118128317468766E-43" />
-      <entry key="MS500" value="2.779948530839089E-9" />
-      <entry key="S2" value="0.010971418552365992" />
-      <entry key="S5" value="0.26145624832629927" />
-      <entry key="S10" value="0.8265413325233028" />
-      <entry key="S30" value="2.119701749447733" />
-      <entry key="S60" value="3.29742786281376" />
-      <entry key="M2" value="4.998096157950332" />
-      <entry key="M5" value="7.501254171727766" />
-      <entry key="M10" value="9.040363023987997" />
-      <entry key="M15" value="9.831736148811938" />
-      <entry key="M30" value="11.24342891338635" />
-      <entry key="H1" value="13.06390805479019" />
-      <entry key="H2" value="16.168417997728355" />
-      <entry key="H4" value="21.24690289071206" />
-      <entry key="D1" value="33.47325170869521" />
-      <entry key="W1" value="37.28738895617711" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.000000000000034" />
+      <entry key="S10" value="1.0000001842540926" />
+      <entry key="S30" value="1.0056903508912707" />
+      <entry key="S60" value="1.0754344145020738" />
+      <entry key="M2" value="1.2746532754488396" />
+      <entry key="M5" value="1.5991402567141566" />
+      <entry key="M10" value="1.9460610211545482" />
+      <entry key="M15" value="2.5473305401272253" />
+      <entry key="M30" value="4.929519643742156" />
+      <entry key="H1" value="8.719537158804307" />
+      <entry key="H2" value="13.610811907677832" />
+      <entry key="H4" value="20.010803668092567" />
+      <entry key="D1" value="34.5654136678197" />
+      <entry key="W1" value="39.141247860264436" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.5282318219913134" />
-      <entry key="MS500" value="4.269681795171215" />
-      <entry key="S2" value="7.205094768829182" />
-      <entry key="S5" value="8.990322472300276" />
-      <entry key="S10" value="11.829112458198768" />
-      <entry key="S30" value="21.382878753265317" />
-      <entry key="S60" value="32.857639883821214" />
-      <entry key="M2" value="48.504500233375204" />
-      <entry key="M5" value="68.73902016884895" />
-      <entry key="M10" value="80.22353212186366" />
-      <entry key="M15" value="87.15993668514444" />
-      <entry key="M30" value="106.03666784269312" />
-      <entry key="H1" value="140.76891240146358" />
-      <entry key="H2" value="195.13934586100405" />
-      <entry key="H4" value="265.6875774008489" />
-      <entry key="D1" value="409.8391001088023" />
-      <entry key="W1" value="452.1677142763856" />
+      <entry key="MS100" value="0.3253354638604834" />
+      <entry key="MS500" value="0.7988519164491479" />
+      <entry key="S2" value="0.9454021167507609" />
+      <entry key="S5" value="0.9777991779374432" />
+      <entry key="S10" value="0.9940711079973386" />
+      <entry key="S30" value="1.5134586244219843" />
+      <entry key="S60" value="3.0109964331694834" />
+      <entry key="M2" value="5.542199112447754" />
+      <entry key="M5" value="9.596161956370217" />
+      <entry key="M10" value="14.232445922012483" />
+      <entry key="M15" value="21.170152191647198" />
+      <entry key="M30" value="48.384928813979826" />
+      <entry key="H1" value="98.21267625998456" />
+      <entry key="H2" value="169.8471534381176" />
+      <entry key="H4" value="257.3733400914616" />
+      <entry key="D1" value="433.2165933164741" />
+      <entry key="W1" value="485.3222194049626" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -277,31 +236,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.WebStone.Khiputech.platform: http.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/iam&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.WebStone.Khiputech.platform: http.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "feature/get-artifact-by-id",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebStone.Khiputech.platform: http">
     <configuration name="WebStone.Khiputech.platform: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebStone.Khiputech.platform/WebStone.Khiputech.platform.csproj" />
@@ -355,6 +315,7 @@
       <workItem from="1780741911677" duration="1583000" />
       <workItem from="1780753646152" duration="817000" />
       <workItem from="1780801328003" duration="6338000" />
+      <workItem from="1780932777477" duration="5062000" />
     </task>
     <servers />
   </component>
@@ -395,17 +356,18 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/WebStone.Khiputech.Platform/Iam/Interfaces/Rest/Transform/IamActionResultAssembler.cs</url>
           <line>74</line>
-          <properties documentPath="D:\UPC\2026-01\Aplicaciones Web - Presencial\GITHUB-BACKEND\WebStone.Khiputech.platform\Iam\Interfaces\Rest\Transform\IamActionResultAssembler.cs" containingFunctionPresentation="Method 'ToActionResultFromSignUpResult'">
-            <startOffsets>
-              <option value="3271" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3339" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\UPC\2026-01\Aplicaciones Web - Presencial\GITHUB-BACKEND\WebStone.Khiputech.platform\Iam\Interfaces\Rest\Transform\IamActionResultAssembler.cs" containingFunctionPresentation="Method 'ToActionResultFromSignUpResult'" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
