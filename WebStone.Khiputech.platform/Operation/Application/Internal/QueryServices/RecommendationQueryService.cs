@@ -1,3 +1,4 @@
+/*
 using WebStone.Khiputech.Platform.Operation.Domain.Model.Aggregates;
 using WebStone.Khiputech.Platform.Operation.Domain.Model.Queries;
 
@@ -16,3 +17,4 @@ public class RecommendationQueryService : IRecommendationQueryService
         return await _repository.GetAllAsync();
     }
 }
+*/
