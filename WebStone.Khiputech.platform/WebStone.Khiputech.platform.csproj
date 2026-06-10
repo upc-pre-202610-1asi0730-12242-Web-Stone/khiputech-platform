@@ -23,4 +23,8 @@
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.19.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Visiting\Application\CommandServices\" />
+  </ItemGroup>
+
 </Project>
