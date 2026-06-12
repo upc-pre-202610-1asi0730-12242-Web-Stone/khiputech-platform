@@ -1,3 +1,5 @@
+.idea/
+.ai/
 bin/
 obj/
 /packages/
