@@ -45,6 +45,10 @@ using WebStone.Khiputech.Platform.Shared.Infrastructure.Persistence.EntityFramew
 using WebStone.Khiputech.Platform.Shared.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 using WebStone.Khiputech.Platform.Shared.Infrastructure.Pipeline.Middleware.Extensions;
 using WebStone.Khiputech.Platform.Shared.Interfaces.Rest.ProblemDetails;
+using WebStone.Khiputech.Platform.Visiting.Application.Internal.QueryServices;
+using WebStone.Khiputech.Platform.Visiting.Application.QueryServices;
+using WebStone.Khiputech.Platform.Visiting.Domain.Repositories;
+using WebStone.Khiputech.Platform.Visiting.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -54,7 +58,6 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 builder.Services.AddControllers(options =>
     {
-        // Opcional: transformar nombres de controladores a kebab-case (ej. "analytics" en lugar de "Analytics")
         options.Conventions.Add(new RouteTokenTransformerConvention(new SlugifyParameterTransformer()));
     })
     .AddDataAnnotationsLocalization();
@@ -75,7 +78,7 @@ builder.Services.AddDbContext<AppDbContext>((serviceProvider, options) =>
         options.EnableSensitiveDataLogging();
 });
 
-// 3. CORS (permite peticiones desde el frontend)
+// 3. CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllPolicy",
@@ -88,6 +91,7 @@ builder.Services.AddCors(options =>
 var tokenSettings = builder.Configuration.GetSection("TokenSettings").Get<TokenSettings>();
 if (tokenSettings is null || string.IsNullOrWhiteSpace(tokenSettings.Secret))
     throw new InvalidOperationException("TokenSettings: Secret is not configured.");
+
 var key = Encoding.ASCII.GetBytes(tokenSettings.Secret);
 
 builder.Services.AddAuthentication(options =>
@@ -109,7 +113,7 @@ builder.Services.AddAuthentication(options =>
         };
     });
 
-// 5. Localización (recursos .resx)
+// 5. Localización
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 builder.Services.AddSingleton<IStringLocalizer<ErrorMessages>, StringLocalizer<ErrorMessages>>();
 builder.Services.AddSingleton<IStringLocalizer<IamMessages>, StringLocalizer<IamMessages>>();
@@ -124,6 +128,7 @@ builder.Services.AddSwaggerGen(options =>
         Version = "v1",
         Description = "API para la gestión de museos (bounded contexts)"
     });
+
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,
@@ -133,6 +138,7 @@ builder.Services.AddSwaggerGen(options =>
         BearerFormat = "JWT",
         Scheme = "bearer"
     });
+
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -147,10 +153,11 @@ builder.Services.AddSwaggerGen(options =>
             new List<string>()
         }
     });
+
     options.EnableAnnotations();
 });
 
-// 7. Inyección de dependencias (Shared, Iam, Analytics) -------------------------
+// 7. Inyección de dependencias --------------------------------------------------
 
 // Shared
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -164,11 +171,8 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserCommandService, UserCommandService>();
 builder.Services.AddScoped<IUserQueryService, UserQueryService>();
 
-// Analytics (con repositorios mock, los comentamos hasta que tengamos implementación real)
+// Analytics
 builder.Services.AddScoped<IAnalyticsQueryService, AnalyticsQueryService>();
-// builder.Services.AddScoped<IArtworkStatRepository, ArtworkStatRepository>();
-// builder.Services.AddScoped<IVisitorStatRepository, VisitorStatRepository>();
-// builder.Services.AddScoped<ISponsorRepository, SponsorRepository>();
 
 // Capacity
 builder.Services.AddScoped<IRoomRepository, RoomRepository>();
@@ -187,10 +191,13 @@ builder.Services.AddScoped<IMaintenanceTaskRepository, MaintenanceTaskRepository
 builder.Services.AddScoped<IMaintenanceQueryService, MaintenanceQueryService>();
 builder.Services.AddScoped<IMaintenanceCommandService, MaintenanceCommandService>();
 
+// Visiting
+builder.Services.AddScoped<IArtworkRepository, ArtworkRepository>();
+builder.Services.AddScoped<IArtworkQueryService, ArtworkQueryService>();
+
 // -----------------------------------------------------------------------------
 
 var app = builder.Build();
-
 
 if (app.Environment.IsDevelopment())
 {
@@ -198,8 +205,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseGlobalExceptionHandler();   // Asegúrate de tener implementado este middleware (ver más abajo)
-app.UseRequestAuthorization();     // Middleware personalizado de Iam
+app.UseGlobalExceptionHandler();
+app.UseRequestAuthorization();
 app.UseCors("AllowAllPolicy");
 app.UseHttpsRedirection();
 app.UseAuthentication();

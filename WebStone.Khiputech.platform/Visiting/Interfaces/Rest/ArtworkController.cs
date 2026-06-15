@@ -7,7 +7,8 @@ namespace WebStone.Khiputech.Platform.Visiting.Interfaces.Rest;
 
 [ApiController]
 [Route("api/artifacts")]
-public class ArtworkController(IArtworkQueryService artworkQueryService) : ControllerBase
+public class ArtworkController(IArtworkQueryService artworkQueryService)
+    : ControllerBase
 {
     [HttpGet("{id:int}")]
     public async Task<IActionResult> GetArtworkById(int id)
@@ -16,9 +17,15 @@ public class ArtworkController(IArtworkQueryService artworkQueryService) : Contr
         var artwork = await artworkQueryService.Handle(query);
 
         if (artwork is null)
-            return NotFound(new { message = $"Artwork with id {id} was not found." });
+            return NotFound(new
+            {
+                message = $"Artwork with id {id} was not found."
+            });
 
-        var resource = ArtworkResourceFromEntityAssembler.ToResourceFromEntity(artwork);
+        var resource =
+            ArtworkResourceFromEntityAssembler
+                .ToResourceFromEntity(artwork);
+
         return Ok(resource);
     }
 }
