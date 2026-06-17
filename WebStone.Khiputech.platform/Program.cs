@@ -45,6 +45,8 @@ using WebStone.Khiputech.Platform.Shared.Infrastructure.Persistence.EntityFramew
 using WebStone.Khiputech.Platform.Shared.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 using WebStone.Khiputech.Platform.Shared.Infrastructure.Pipeline.Middleware.Extensions;
 using WebStone.Khiputech.Platform.Shared.Interfaces.Rest.ProblemDetails;
+using WebStone.Khiputech.Platform.Visiting.Application.CommandServices;
+using WebStone.Khiputech.Platform.Visiting.Application.Internal.CommandServices;
 using WebStone.Khiputech.Platform.Visiting.Application.Internal.QueryServices;
 using WebStone.Khiputech.Platform.Visiting.Application.QueryServices;
 using WebStone.Khiputech.Platform.Visiting.Domain.Repositories;
@@ -194,6 +196,10 @@ builder.Services.AddScoped<IMaintenanceCommandService, MaintenanceCommandService
 // Visiting
 builder.Services.AddScoped<IArtworkRepository, ArtworkRepository>();
 builder.Services.AddScoped<IArtworkQueryService, ArtworkQueryService>();
+
+builder.Services.AddScoped<IFavoriteRepository, FavoriteRepository>();
+builder.Services.AddScoped<IFavoriteCommandService, FavoriteCommandService>();
+builder.Services.AddScoped<IFavoriteQueryService, FavoriteQueryService>();
 
 // -----------------------------------------------------------------------------
 
