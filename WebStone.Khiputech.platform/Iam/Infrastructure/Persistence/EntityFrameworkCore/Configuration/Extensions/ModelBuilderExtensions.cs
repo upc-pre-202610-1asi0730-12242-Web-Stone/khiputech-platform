@@ -16,32 +16,42 @@ public static class ModelBuilderExtensions
     {
         builder.Entity<User>(entity =>
         {
-            entity.ToTable("users");
+            entity.ToTable("users"); 
+        
             entity.HasKey(u => u.Id);
             entity.Property(u => u.Id)
                 .IsRequired()
                 .ValueGeneratedOnAdd()
-                .HasColumnName("id");
+                .HasColumnName("Id");
+
+            entity.HasIndex(u => u.Username)
+                .IsUnique();
+
             entity.Property(u => u.Username)
                 .IsRequired()
                 .HasMaxLength(100)
-                .HasColumnName("username");
+                .HasColumnName("Username");
+
             entity.Property(u => u.PasswordHash)
                 .IsRequired()
-                .HasColumnName("password_hash");
+                .HasColumnName("PasswordHash");
+
             entity.Property(u => u.Type)
                 .IsRequired()
                 .HasMaxLength(20)
-                .HasColumnName("type")
+                .HasColumnName("Type")
                 .HasDefaultValue("public");
+
             entity.Property(u => u.Permissions)
+                .IsRequired()
                 .HasMaxLength(200)
-                .HasColumnName("permissions")
-                .HasDefaultValue(string.Empty);
+                .HasColumnName("Permissions");
+
             entity.Property(u => u.CreatedAt)
-                .HasColumnName("created_at");
+                .HasColumnName("CreatedAt");
+
             entity.Property(u => u.UpdatedAt)
-                .HasColumnName("updated_at");
+                .HasColumnName("UpdatedAt");
         });
     }
 }

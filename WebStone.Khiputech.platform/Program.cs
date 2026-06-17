@@ -179,8 +179,10 @@ builder.Services.AddScoped<ICapacityCommandService, CapacityCommandService>();
 // Operation
 builder.Services.AddScoped<IAlertRepository, AlertRepository>();
 builder.Services.AddScoped<IAlertConfigurationRepository, AlertConfigurationRepository>();
+builder.Services.AddScoped<IOperationRecommendationRepository, OperationRecommendationRepository>(); 
 builder.Services.AddScoped<IOperationQueryService, OperationQueryService>();
 builder.Services.AddScoped<IOperationCommandService, OperationCommandService>();
+
 
 // Maintenance
 builder.Services.AddScoped<IMaintenanceTaskRepository, MaintenanceTaskRepository>();
@@ -215,7 +217,7 @@ app.MapControllers();
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    dbContext.Database.Migrate();
+    //dbContext.Database.Migrate();
 }
 
 app.Run();

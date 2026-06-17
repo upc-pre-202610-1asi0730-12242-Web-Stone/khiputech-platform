@@ -60,8 +60,10 @@ public class MaintenanceController(
     [SwaggerOperation(Summary = "Restore an artwork after maintenance (complete the task)")]
     public async Task<IActionResult> RestoreArtwork(int artworkId, CancellationToken ct)
     {
-        await commandService.Handle(new RestoreArtworkCommand(artworkId), ct);
-        return NoContent();
+        // Ahora pasamos el ArtworkId directamente
+        var command = new RestoreArtworkAvailabilityCommand(artworkId);
+        await commandService.Handle(command, ct);
+        return Ok(new { message = $"Obra {artworkId} restaurada exitosamente" });
     }
 
     [HttpPost("tasks/{taskId}/cancel")]
