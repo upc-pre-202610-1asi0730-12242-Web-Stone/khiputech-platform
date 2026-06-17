@@ -13,7 +13,7 @@ public class RecommendationQueryService : IRecommendationQueryService
         _repository = repository;
     }
 
-    public async Task<IEnumerable<OperationRecommendation>> Handle(GetOperationRecommendationsQuery query)
+    public async Task<IEnumerable<OperationRecommendation>> Handle(GetOperationRecommendationQuery query)
     {
         return await _repository.GetAllAsync();
     }
