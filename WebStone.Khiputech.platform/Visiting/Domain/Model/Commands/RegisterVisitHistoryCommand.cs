@@ -1,6 +1,6 @@
 namespace WebStone.Khiputech.Platform.Visiting.Domain.Model.Commands;
 
-public class RegisterVisitHistoryCommand
-{
-    
-}
+public record RegisterVisitHistoryCommand(
+    int ArtworkId,
+    string SessionId
+);
