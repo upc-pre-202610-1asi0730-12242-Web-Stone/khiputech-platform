@@ -1,6 +1,6 @@
 using WebStone.Khiputech.Platform.Operation.Application.CommandServices;
-using WebStone.Khiputech.Platform.Operation.Domain.Model.Commands;
 using WebStone.Khiputech.Platform.Operation.Domain.Model.Aggregates;
+using WebStone.Khiputech.Platform.Operation.Domain.Model.Commands;
 using WebStone.Khiputech.Platform.Operation.Domain.Repositories;
 using WebStone.Khiputech.Platform.Shared.Domain.Repositories;
 
@@ -9,6 +9,7 @@ namespace WebStone.Khiputech.Platform.Operation.Application.Internal.CommandServ
 public class OperationCommandService(
     IAlertRepository alertRepository,
     IAlertConfigurationRepository configRepository,
+    IOperationRecommendationRepository recommendationRepository,  // ← Agregar
     IUnitOfWork unitOfWork) : IOperationCommandService
 {
     public async Task Handle(CreateAlertCommand command, CancellationToken ct)
@@ -37,5 +38,17 @@ public class OperationCommandService(
         config.UpdateContactCivilDefense(command.ContactCivilDefense);
         configRepository.Update(config);
         await unitOfWork.CompleteAsync(ct);
+    }
+    
+    public async Task<OperationRecommendation> Handle(CreateRecommendationCommand command, CancellationToken ct)
+    {
+        var recommendation = new OperationRecommendation(
+            command.RoomName,
+            command.Issue,
+            command.SuggestedAction
+        );
+        await recommendationRepository.AddAsync(recommendation, ct);  // ← Usar el parámetro, no _recommendationRepository
+        await unitOfWork.CompleteAsync(ct);  // ← Usar el parámetro, no _unitOfWork
+        return recommendation;
     }
 }

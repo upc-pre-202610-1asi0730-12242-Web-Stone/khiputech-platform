@@ -35,5 +35,16 @@ public static class ModelBuilderExtensions
             entity.Property(c => c.ContactCivilDefense).HasMaxLength(200);
             entity.Property(c => c.UpdatedAt);
         });
+        
+        builder.Entity<OperationRecommendation>(entity =>
+        {
+            entity.ToTable("operation_recommendations");
+            entity.HasKey(r => r.Id);
+            entity.Property(r => r.Id).ValueGeneratedOnAdd();
+            entity.Property(r => r.RoomName).IsRequired().HasMaxLength(100);
+            entity.Property(r => r.Issue).IsRequired().HasMaxLength(500);
+            entity.Property(r => r.SuggestedAction).IsRequired().HasMaxLength(500);
+            entity.Property(r => r.GeneratedAt);
+        });
     }
 }

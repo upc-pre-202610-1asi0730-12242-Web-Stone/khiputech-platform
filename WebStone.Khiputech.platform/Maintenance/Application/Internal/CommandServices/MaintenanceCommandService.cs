@@ -35,18 +35,18 @@ public class MaintenanceCommandService(
         return task;
     }
 
-    public async Task Handle(RestoreArtworkCommand command, CancellationToken ct)
+    public async Task Handle(RestoreArtworkAvailabilityCommand command, CancellationToken ct)
     {
         var activeTasks = await taskRepository.ListAsync(true, ct);
         var task = activeTasks.FirstOrDefault(t => t.ArtworkId == command.ArtworkId);
+    
         if (task == null)
-            throw new Exception($"No active maintenance task found for artwork {command.ArtworkId}");
-
+            throw new Exception($"No hay tarea de mantenimiento activa para la obra {command.ArtworkId}");
+    
         task.Complete();
         taskRepository.Update(task);
         await unitOfWork.CompleteAsync(ct);
-
-        // Aquí se emitiría un evento de dominio: "Work prepared for exhibition"
+    
     }
 
     public async Task Handle(CancelMaintenanceCommand command, CancellationToken ct)
